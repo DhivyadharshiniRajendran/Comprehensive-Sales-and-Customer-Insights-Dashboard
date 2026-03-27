@@ -43,7 +43,7 @@ The underlying data model connects multiple dimension tables to central fact tab
 - **Sales Fact Table**: Connects to `Products` (`ProductKey`), `Customers` (`CustomerKey`), `Territories` (`TerritoryKey`), and `Calendar` (`OrderDate`, `StockDate`).
 - **Products Dimension**: Connects upwards to `Product_Subcategories` which in turn connects to `Product_Categories` to provide granular product hierarchy analytics.
 - **Returns Fact Table**: Functions similarly to Sales, mapping returned quantities back to the `Products`, `Territories`, and `Calendar` dimensions.
-
+ER Link : https://drive.google.com/drive/folders/1IuRGmeh1ZvO2cknDnVZrV8DYMlbT9ffy
 ---
 
 ## 📌 Assumptions Made During Analysis
