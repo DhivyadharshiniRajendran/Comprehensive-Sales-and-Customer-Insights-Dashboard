@@ -63,6 +63,7 @@ To ensure transparency and reproducibility, the following assumptions were made 
    - Date fields (`OrderDate`, `StockDate`) come in varied, mixed formats (`MM-DD-YYYY`, `DD/MM/YYYY`, etc.). A robust parsing function is assumed to successfully standardize 99%+ of these dates to `YYYY-MM-DD` timestamps.
 6. **Execution Order**: The data flow relies on sequential dependency. Checkpoint 2 relies on the `Master_Dataset.csv` created in Checkpoint 1. Checkpoint 4 relies on the `Master_Dataset_Cleaned.csv` created in Checkpoint 2.
 7. **Predictive Modeling Validity**: For the linear regression 6-month forecast, we assume that historical monthly revenue trends encapsulate seasonality sufficiently for base predictions. For K-Means, missing recency/frequency/monetary features are negligible or easily scaled.
+8.  **Sales table**: All the three sales tables are combined as a single table.
 
 Links:
 Folder (Demo video, ER Diagram, Documentation) : https://drive.google.com/drive/folders/1IuRGmeh1ZvO2cknDnVZrV8DYMlbT9ffy
